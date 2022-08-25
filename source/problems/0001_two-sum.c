@@ -9,8 +9,7 @@ static int compare(const void* l, const void* r) {
   return ((Object*)l)->value - ((Object*)r)->value;
 }
 
-int* twoSum(int* nums, int numsSize, int target, int* returnSize)
-{
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
   Object* objs = (Object*)malloc(sizeof(Object) * numsSize);
   for (int i = 0; i < numsSize; i++) {
     objs[i].value = nums[i];

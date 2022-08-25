@@ -6,3 +6,8 @@
 *** project structure
 *** cmake
 *** leetcode
+*** c ide
+
+- [X] company
+- [X] jump
+- [X] format
