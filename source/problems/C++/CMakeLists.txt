@@ -1,0 +1,5 @@
+file(GLOB SRCS *.cpp)
+foreach(src ${SRCS})
+  get_filename_component(target ${src} NAME_WE)
+  add_library(${target} SHARED ${src})
+endforeach()
