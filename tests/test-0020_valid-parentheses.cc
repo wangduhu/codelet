@@ -11,6 +11,7 @@ TEST_CASE("c solution") {
   CHECK(!isValid("(]"));
   CHECK(!isValid("]"));
   CHECK(isValid(""));
+  CHECK(!isValid("["));
 }
 
 TEST_CASE("c++ solution") {
