@@ -1,6 +1,39 @@
 
+* PROBLEMS
+:PROPERTIES:
+:ID:       7870A778-2059-4BCA-BF7E-9BFB1390E99D
+:SNIPPET:  leetcode
+:END:
 
-* toolkits
+** TODO Search Insert Position                         :binary_search:array:
+SCHEDULED: <2022-08-28 Sun>
+:PROPERTIES:
+:SEQNO:    35
+:LEVEL:    easy
+:END:
+** DONE Valid Parentheses                                     :stack:string:
+CLOSED: [2022-08-26 Fri 12:59] SCHEDULED: <2022-08-26 Fri>
+:PROPERTIES:
+:SEQNO:    20
+:LEVEL:    easy
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-08-28 Sun 12:59]
+:END:
+
+** DONE Two Sum                                           :hash_table:array:
+CLOSED: [2022-08-25 Thu 12:55] SCHEDULED: <2022-08-25 Thu>
+:PROPERTIES:
+:SEQNO:    1
+:LEVEL:    easy
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-08-28 Sun 12:55]
+:END:
+
+** dummy
+
+* TOOLKITS
 
 ** project engineering
 *** project structure
@@ -13,6 +46,9 @@
 - [X] format
 *** 集成已有的 C++算法代码
 *** leetcode c and cpp
+:PROPERTIES:
+:ID:       7FBE2EDC-9C73-40E9-A648-19DA5D996DC0
+:END:
 
 #+begin_src emacs-lisp
 (defun wally/leetcode-start-c-or-cpp ()
