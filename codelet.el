@@ -54,6 +54,30 @@
       (org-set-tags (s-split ", " (s-replace "-" "_" (nth 4 wally-leetcode-current-problem))))
       (setq wally-leetcode-current-problem nil))))
 
+(defun wally/leetcode-run()
+  (interactive)
+  (let* ((default-directory cmake-ide-build-dir)
+         (relative-path (substring (buffer-file-name) (length (expand-file-name cmake-ide-project-dir))))
+         (problem (file-name-sans-extension relative-path)))
+    (if (not (f-exists-p problem))
+        (setq problem (f-filename problem)))
+    (shell-command (format "%s/%s" local-bin-dir problem))))
+
+
+(defun wally/leetcode-start-c-or-cpp ()
+  "start leetcode session with specified language, default C"
+  (interactive)
+  (leetcode-set-prefer-language)
+  (setq leetcode-directory (f-join "~/Project/codelet/source/solutions" (if (string-equal "cpp" leetcode-prefer-language) "C++" "C")))
+  (leetcode-refresh))
+
 (spacemacs/set-leader-keys
-  ";ls" 'wally/leetcode-save-current-problem
+  ";lR" 'leetcode-refresh
+  ";lq" 'leetcode-quit
+  ";ll" 'leetcode
+  ";lt" 'leetcode-try
+  ";lu" 'leetcode-submit
+  ";lc" 'wally/leetcode-start-c-or-cpp
+  ";lS" 'wally/leetcode-save-current-problem
+  ";lr" 'wally/leetcode-run
   )

@@ -45,17 +45,3 @@ CLOSED: [2022-08-25 Thu 12:55] SCHEDULED: <2022-08-25 Thu>
 - [X] jump
 - [X] format
 *** 集成已有的 C++算法代码
-*** leetcode c and cpp
-:PROPERTIES:
-:ID:       7FBE2EDC-9C73-40E9-A648-19DA5D996DC0
-:END:
-
-#+begin_src emacs-lisp
-(defun wally/leetcode-start-c-or-cpp ()
-  "start leetcode session with specified language, default C"
-  (interactive)
-  (leetcode-set-prefer-language)
-  (setq leetcode-directory (f-join "~/Project/codelet/source/problems" (if (string-equal "cpp" leetcode-prefer-language) "C++" "C")))
-  (leetcode-refresh)
-  (leetcode))
-#+end_src
