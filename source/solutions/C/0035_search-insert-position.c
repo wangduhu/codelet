@@ -5,13 +5,11 @@ int searchInsert(int* nums, int numsSize, int target) {
   int r = numsSize;
   int m;
   while (l < r) {
-    m = (l + r) / 2;
-    if (nums[m] == target) {
-        return m;
-    } else if (nums[m] < target) {
-      l = m + 1;
+    m = l +  (r - l) / 2;
+    if (nums[m] < target) {
+        l = m + 1;
     } else {
-      r = m;
+        r = m;
     }
   }
   return l;
@@ -19,6 +17,6 @@ int searchInsert(int* nums, int numsSize, int target) {
 
 /*
   Status: Accepted (64/64)
-  Runtime: 12 ms, faster than 12.91% of C submissions.
-  Memory Usage: 6.2 MB, less than 10.05% of C submissions.
+  Runtime: 6 ms, faster than 63.03% of C submissions.
+  Memory Usage: 5.9 MB, less than 99.43% of C submissions.
  */
