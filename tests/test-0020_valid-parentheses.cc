@@ -5,7 +5,7 @@
 using namespace std;
 
 #include "0020_valid-parentheses.c"
-// #include "0020_valid-parentheses.cpp"
+#include "0020_valid-parentheses.cpp"
 #include <string>
 
 struct Table {
@@ -28,11 +28,11 @@ void assertsC() {
     }
 }
 
-// template <typename S> void assertsCpp(S soln) {
-//     for (auto &row : table) {
-//         CHECK(soln.X(row.input) == row.expect);
-//     }
-// }
+template <typename S> void assertsCpp(S soln) {
+    for (auto &row : table) {
+        CHECK(soln.isValid(row.input) == row.expect);
+    }
+}
 
 TEST_CASE("c solutions") { assertsC(); }
-// TEST_CASE("c solutions") { assertsCpp(Solution()); }
+TEST_CASE("c solutions") { assertsCpp(Solution()); }
