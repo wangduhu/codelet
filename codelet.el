@@ -84,6 +84,43 @@
       (yas-expand))
     ))
 
+(defun wally/leetcode-export-to-anki-card ()
+  "export problem heading to anki card"
+  (interactive)
+  (if (not (org-at-heading-p))
+      (error "not a problem heading"))
+  (let* ((desc-dir "problems")
+         (c-src-dir "source/solutions/C")
+         (cpp-src-dir "source/solutions/C++")
+         (title (nth 4 (org-heading-components)))
+         (note-id (org-id-get-create))
+         (seqno (string-to-number (org-entry-get nil "SEQNO")))
+         filename
+         (card-dir "~/Wally/data/card")
+         (card-name (f-join card-dir (f-filename (make-temp-file "alg" nil ".org"))))
+         )
+    (setq filename (format "%04d_%s" seqno (s-replace " " "-" (downcase title))))
+    (setq leetcode-card-id (f-base card-name)
+          leetcode-card-note-id note-id
+          leetcode-card-title title
+          leetcode-card-level (org-entry-get nil "LEVEL")
+          leetcode-card-tags (s-join " " (org-get-tags))
+          leetcode-card-desc (f-read-text (f-join desc-dir (format "%s.txt" filename)))
+          leetcode-card-c-code (f-read-text (f-join c-src-dir (format "%s.c" filename)))
+          leetcode-card-cpp-code (f-read-text (f-join cpp-src-dir (format "%s.cpp" filename)))
+          )
+    (org-set-property "ANKI_CARD" leetcode-card-id)
+    (find-file-noselect card-name)
+    (with-current-buffer (get-file-buffer card-name)
+      (erase-buffer)
+      (insert "leetcodecard")
+      (yas-expand)
+      (goto-char (point-min))
+      (next-line)
+      (replace-regexp "^\\* " "- ")
+      (save-buffer))
+    (switch-to-buffer (get-file-buffer card-name))))
+
 (spacemacs/set-leader-keys
   ";lR" 'leetcode-refresh
   ";lq" 'leetcode-quit
@@ -95,4 +132,5 @@
   ";lr" 'wally/leetcode-run
   ";lg" nil
   ";lgt" 'wally/leetcode-switch-to-test
+  ";le" 'wally/leetcode-export-to-anki-card
   )
