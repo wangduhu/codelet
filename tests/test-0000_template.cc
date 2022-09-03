@@ -7,17 +7,24 @@ using namespace std;
 
 extern int factorial(int number);
 
-TEST_CASE("c solution") {
-  CHECK(factorial(1) == 1);
-  CHECK(factorial(2) == 2);
-  CHECK(factorial(3) == 6);
-  CHECK(factorial(10) == 3628800);
+struct Table {
+  int num;
+  int expect;
+};
+
+Table table[] = {{1, 1}, {2, 2}, {3, 6}, {10, 3628800}};
+
+void assertsC() {
+  for (auto &row : table) {
+    CHECK(factorial(row.num) == row.expect);
+  }
 }
 
-TEST_CASE("c++ solution") {
-  Solution soln;
-  CHECK(soln.factorial(1) == 1);
-  CHECK(soln.factorial(2) == 2);
-  CHECK(soln.factorial(3) == 6);
-  CHECK(soln.factorial(10) == 3628800);
+template <typename S> void assertsCpp(S soln) {
+  for (auto &row : table) {
+    CHECK(soln.factorial(row.num) == row.expect);
+  }
 }
+
+TEST_CASE("c solutions") { assertsC(); }
+TEST_CASE("c solutions") { assertsCpp(Soluion()); }
