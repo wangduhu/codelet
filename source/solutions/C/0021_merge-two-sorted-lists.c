@@ -1,11 +1,3 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
 struct ListNode *mergeTwoLists(struct ListNode *list1, struct ListNode *list2) {
   struct ListNode dummy;
   struct ListNode *cur = &dummy;
@@ -32,9 +24,3 @@ struct ListNode *mergeTwoLists(struct ListNode *list1, struct ListNode *list2) {
   }
   return dummy.next;
 }
-
-/*
-  Status: Accepted (208/208)
-  Runtime: 8 ms, faster than 33.28% of C submissions.
-  Memory Usage: 6 MB, less than 95.41% of C submissions.
- */

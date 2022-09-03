@@ -87,3 +87,8 @@ CLOSED: [2022-09-03 Sat 16:01]
 :LOGBOOK:
 - State "DONE"       from              [2022-09-03 Sat 16:01]
 :END:
+*** DONE 提交结果并没有什么实质性意见，不用保存
+CLOSED: [2022-09-03 Sat 16:13]
+:LOGBOOK:
+- State "DONE"       from              [2022-09-03 Sat 16:13]
+:END:

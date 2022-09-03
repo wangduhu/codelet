@@ -1,8 +1,4 @@
-#include <cassert>
-#include <unordered_map>
 #include <vector>
-
-using namespace std;
 
 class Solution {
  public:
@@ -23,9 +19,3 @@ class Solution {
     return result;
   }
 };
-
-/*
-  Status: Accepted (57/57)
-  Runtime: 25 ms, faster than 53.77% of C++ submissions.
-  Memory Usage: 12.1 MB, less than 12.19% of C++ submissions.
- */

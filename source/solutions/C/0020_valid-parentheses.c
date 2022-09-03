@@ -1,7 +1,3 @@
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
-
 static inline int isLeft(char c) { return (c == '(') || (c == '[') || (c == '{'); }
 
 static inline int isPair(char l, char r) {
@@ -28,9 +24,3 @@ int isValid(char * s) {
   free(stack);
   return n == 0 && ans;
 }
-
-/*
-  Status: Accepted (92/92)
-  Runtime: 0 ms, faster than 100.00% of C submissions.
-  Memory Usage: 5.8 MB, less than 17.58% of C submissions.
- */

@@ -1,5 +1,3 @@
-#include <stdlib.h>
-
 typedef struct {
   int value;
   int index;
@@ -36,9 +34,3 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 
   return ans;
 }
-
-/*
-  Status: Accepted (57/57)
-  Runtime: 17 ms, faster than 92.08% of C submissions.
-  Memory Usage: 6.9 MB, less than 8.75% of C submissions.
- */

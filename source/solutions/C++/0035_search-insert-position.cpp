@@ -17,9 +17,3 @@ public:
     return l;
   }
 };
-
-/*
-  Status: Accepted (64/64)
-  Runtime: 16 ms, faster than 6.22% of C++ submissions.
-  Memory Usage: 9.8 MB, less than 23.01% of C++ submissions.
- */
