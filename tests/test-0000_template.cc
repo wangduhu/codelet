@@ -1,10 +1,11 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
+#include "intf.h"
 
 using namespace std;
 
-#include "0000_template.cpp"
 #include "0000_template.c"
+#include "0000_template.cpp"
 
 struct Table {
   int num;
@@ -26,4 +27,4 @@ template <typename S> void assertsCpp(S soln) {
 }
 
 TEST_CASE("c solutions") { assertsC(); }
-TEST_CASE("c solutions") { assertsCpp(Soluion()); }
+TEST_CASE("c solutions") { assertsCpp(Solution()); }

@@ -1,65 +1,39 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
+#include "intf.h"
 
-#include <vector>
 using namespace std;
 
-#include "0035_search-insert-position.cpp"
 #include "0035_search-insert-position.c"
+#include "0035_search-insert-position.cpp"
+#include <vector>
 
-extern int searchInsert(int *nums, int numsSize, int target);
+struct Table {
+  vector<int> nums;
+  int target;
+  int expect;
+};
 
-TEST_CASE("c solution") {
-  {
-    int nums[] = {1, 3, 5, 6};
-    CHECK(searchInsert(nums, 4, 5) == 2);
-  }
-  {
-    int nums[] = {1, 3, 5, 6};
-    CHECK(searchInsert(nums, 4, 2) == 1);
-  }
-  {
-    int nums[] = {1, 3, 5, 6};
-    CHECK(searchInsert(nums, 4, 7) == 4);
-  }
-  {
-    int nums[] = {1};
-    CHECK(searchInsert(nums, 1, 0) == 0);
-  }
-  {
-    int nums[] = {};
-    CHECK(searchInsert(nums, 0, 1) == 0);
-  }
-  {
-    int nums[] = {1, 3};
-    CHECK(searchInsert(nums, 2, 2) == 1);
+Table table[] = {
+    {{1, 3, 5, 6}, 5, 2},
+    {{1, 3, 5, 6}, 2, 1},
+    {{1, 3, 5, 6}, 7, 4},
+    {{1}, 0, 0},
+    {{}, 1, 0},
+    {{1, 3}, 2, 1}
+};
+
+void assertsC() {
+  for (auto &row : table) {
+      CHECK(searchInsert(row.nums.data(), row.nums.size(), row.target) == row.expect);
   }
 }
 
-TEST_CASE("c++ solution") {
-  Solution soln;
-  {
-    vector<int> nums({1, 3, 5, 6});
-    CHECK(soln.searchInsert(nums, 5) == 2);
-  }
-  {
-    vector<int> nums({1, 3, 5, 6});
-    CHECK(soln.searchInsert(nums, 2) == 1);
-  }
-  {
-    vector<int> nums({1, 3, 5, 6});
-    CHECK(soln.searchInsert(nums, 7) == 4);
-  }
-  {
-      vector<int> nums({1});
-    CHECK(soln.searchInsert(nums, 0) == 0);
-  }
-  {
-    vector<int> nums;
-    CHECK(soln.searchInsert(nums, 1) == 0);
-  }
-  {
-    vector<int> nums({1, 3});
-    CHECK(soln.searchInsert(nums, 2) == 1);
+template <typename S> void assertsCpp(S soln) {
+  for (auto &row : table) {
+      CHECK(soln.searchInsert(row.nums, row.target) == row.expect);
   }
 }
+
+TEST_CASE("c solutions") { assertsC(); }
+TEST_CASE("c solutions") { assertsCpp(Solution()); }
