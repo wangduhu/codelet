@@ -5,11 +5,23 @@
 :SNIPPET:  leetcode
 :END:
 
-** TODO Merge Two Binary Trees :binary_tree:breadth_first_search:depth_first_search:tree:
-SCHEDULED: <2022-09-03 Sat>
+** DONE Merge Two Sorted Lists                       :recursion:linked_list:
+CLOSED: [2022-09-03 Sat 14:41] SCHEDULED: <2022-09-03 Sat>
+:PROPERTIES:
+:SEQNO:    21
+:LEVEL:    easy
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-03 Sat 14:41]
+:END:
+** DONE Merge Two Binary Trees :binary_tree:breadth_first_search:depth_first_search:tree:
+CLOSED: [2022-09-03 Sat 14:21] SCHEDULED: <2022-09-03 Sat>
 :PROPERTIES:
 :SEQNO:    617
 :LEVEL:    easy
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-03 Sat 14:21]
 :END:
 ** DONE Search Insert Position                         :binary_search:array:
 CLOSED: [2022-09-03 Sat 11:12] SCHEDULED: <2022-08-28 Sun>
