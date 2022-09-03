@@ -5,11 +5,20 @@
 :SNIPPET:  leetcode
 :END:
 
-** TODO Search Insert Position                         :binary_search:array:
-SCHEDULED: <2022-08-28 Sun>
+** TODO Merge Two Binary Trees :binary_tree:breadth_first_search:depth_first_search:tree:
+SCHEDULED: <2022-09-03 Sat>
+:PROPERTIES:
+:SEQNO:    617
+:LEVEL:    easy
+:END:
+** DONE Search Insert Position                         :binary_search:array:
+CLOSED: [2022-09-03 Sat 11:12] SCHEDULED: <2022-08-28 Sun>
 :PROPERTIES:
 :SEQNO:    35
 :LEVEL:    easy
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-03 Sat 11:12]
 :END:
 ** DONE Valid Parentheses                                     :stack:string:
 CLOSED: [2022-08-26 Fri 12:59] SCHEDULED: <2022-08-26 Fri>
