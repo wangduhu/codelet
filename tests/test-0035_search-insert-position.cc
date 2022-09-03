@@ -5,6 +5,7 @@
 using namespace std;
 
 #include "0035_search-insert-position.cpp"
+#include "0035_search-insert-position.c"
 
 extern int searchInsert(int *nums, int numsSize, int target);
 

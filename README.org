@@ -44,4 +44,10 @@ CLOSED: [2022-08-25 Thu 12:55] SCHEDULED: <2022-08-25 Thu>
 - [X] company
 - [X] jump
 - [X] format
+
 *** 集成已有的 C++算法代码
+*** DONE c 文件也使用 include 的方式
+CLOSED: [2022-09-03 Sat 12:34]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-03 Sat 12:34]
+:END:

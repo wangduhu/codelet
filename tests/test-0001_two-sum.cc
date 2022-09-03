@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 
-extern int* twoSum(int* nums, int numsSize, int target, int* returnSize);
+#include "0001_two-sum.c"
 
 TEST_CASE("testing the factorial function") {
   {

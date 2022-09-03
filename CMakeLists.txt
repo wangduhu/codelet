@@ -5,6 +5,4 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wno-long-long -pedantic")
 
 add_subdirectory(source/utils)
-add_subdirectory(source/solutions/C)
-add_subdirectory(source/solutions/C++)
 add_subdirectory(tests)

@@ -4,8 +4,7 @@
 using namespace std;
 
 #include "0000_template.cpp"
-
-extern int factorial(int number);
+#include "0000_template.c"
 
 struct Table {
   int num;
