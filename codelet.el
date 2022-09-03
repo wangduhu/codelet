@@ -71,6 +71,19 @@
   (setq leetcode-directory (f-join "~/Project/codelet/source/solutions" (if (string-equal "cpp" leetcode-prefer-language) "C++" "C")))
   (leetcode-refresh))
 
+(defun wally/leetcode-switch-to-test ()
+  "switch to testcase from source"
+  (interactive)
+  (let* ((testdir "~/Project/codelet/tests")
+         (filename (f-base (buffer-file-name)))
+         (testfile (f-join testdir (format "test-%s.cc" filename))))
+    (find-file testfile)
+    (when (not (f-exists-p testfile))
+      (save-buffer)
+      (insert "leetcodetest")
+      (yas-expand))
+    ))
+
 (spacemacs/set-leader-keys
   ";lR" 'leetcode-refresh
   ";lq" 'leetcode-quit
@@ -80,4 +93,6 @@
   ";lc" 'wally/leetcode-start-c-or-cpp
   ";lS" 'wally/leetcode-save-current-problem
   ";lr" 'wally/leetcode-run
+  ";lg" nil
+  ";lgt" 'wally/leetcode-switch-to-test
   )
