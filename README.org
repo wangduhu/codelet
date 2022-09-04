@@ -5,6 +5,17 @@
 :SNIPPET:  leetcode
 :END:
 
+** DONE Reverse Linked List                          :recursion:linked_list:
+CLOSED: [2022-09-04 Sun 14:56] SCHEDULED: <2022-09-04 Sun>
+:PROPERTIES:
+:SEQNO:    206
+:LEVEL:    easy
+:ID:       91E072DC-9CD9-41FF-B4CC-D6C8C4E83924
+:ANKI_CARD: algTfbLju
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-04 Sun 14:56]
+:END:
 ** DONE Perfect Number                                                :math:
 CLOSED: [2022-09-04 Sun 13:34] SCHEDULED: <2022-09-04 Sun>
 :PROPERTIES:
