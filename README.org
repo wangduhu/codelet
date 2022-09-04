@@ -5,6 +5,17 @@
 :SNIPPET:  leetcode
 :END:
 
+** DONE Perfect Number                                                :math:
+CLOSED: [2022-09-04 Sun 13:34] SCHEDULED: <2022-09-04 Sun>
+:PROPERTIES:
+:SEQNO:    507
+:LEVEL:    easy
+:ID:       08F8BF59-901D-402A-A3DD-CC30FA9D4BF4
+:ANKI_CARD: algv17FS3
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-04 Sun 13:34]
+:END:
 ** DONE Merge Two Sorted Lists                       :recursion:linked_list:
 CLOSED: [2022-09-03 Sat 14:41] SCHEDULED: <2022-09-03 Sat>
 :PROPERTIES:
@@ -61,8 +72,6 @@ CLOSED: [2022-08-25 Thu 12:55] SCHEDULED: <2022-08-25 Thu>
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2022-08-28 Sun 12:55]
 :END:
-
-** dummy
 
 * TOOLKITS
 
