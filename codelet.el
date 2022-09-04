@@ -68,9 +68,30 @@
   "start leetcode session with specified language, default C"
   (interactive)
   (leetcode-set-prefer-language)
-  (setq leetcode-directory (f-join "~/Project/codelet/source/solutions" (if (string-equal "cpp" leetcode-prefer-language) "C++" "C")))
-  (leetcode-refresh))
+  ;; (setq leetcode-directory (f-join "~/Project/codelet/source/solutions" (if (string-equal "cpp" leetcode-prefer-language) "C++" "C")))
+  ;; (leetcode-refresh)
+  )
 
+(defun wally/leetcode-switch-to-test ()
+  "switch to testcase from source"
+  (interactive)
+  (let* ((testdir "~/Project/codelet/tests")
+         (filename (f-base (buffer-file-name)))
+         (testfile (f-join testdir (format "test-%s.cc" filename))))
+    (find-file testfile)
+    (when (not (f-exists-p testfile))
+      (save-buffer)
+      (insert "leetcodetest")
+      (yas-expand))
+    ))
+
+(defun wally/leetcode-switch-to-cpp ()
+  "switch to cpp source file from c source file"
+  (interactive)
+  (let* ((cpp-dir "~/Project/codelet/source/solutions/C++")
+         (filename (f-base (buffer-file-name)))
+         (cpp-file (f-join cpp-dir (format "%s.cpp" filename))))
+    (find-file cpp-file)))
 (defun wally/leetcode-switch-to-test ()
   "switch to testcase from source"
   (interactive)
@@ -107,7 +128,8 @@
           leetcode-card-tags (s-join " " (org-get-tags))
           leetcode-card-desc (f-read-text (f-join desc-dir (format "%s.txt" filename)))
           leetcode-card-c-code (f-read-text (f-join c-src-dir (format "%s.c" filename)))
-          leetcode-card-cpp-code (f-read-text (f-join cpp-src-dir (format "%s.cpp" filename)))
+          leetcode-card-cpp-code (if (f-exists-p (f-join cpp-src-dir (format "%s.cpp" filename)))
+                                     (f-read-text (f-join cpp-src-dir (format "%s.cpp" filename))))
           )
     (org-set-property "ANKI_CARD" leetcode-card-id)
     (find-file-noselect card-name)
@@ -132,5 +154,6 @@
   ";lr" 'wally/leetcode-run
   ";lg" nil
   ";lgt" 'wally/leetcode-switch-to-test
+  ";lgC" 'wally/leetcode-switch-to-cpp
   ";le" 'wally/leetcode-export-to-anki-card
   )
