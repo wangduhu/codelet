@@ -22,7 +22,7 @@
       (insert raw-content)
       (goto-char (point-min))
       (setq line (buffer-substring (line-beginning-position) (line-end-position)))
-      (if (not (string-match "^\\([0-9]+\\)\\. \\([a-zA-Z0-9 ]+\\)$" line))
+      (if (not (string-match "^\\([0-9]+\\)\\. \\([a-zA-Z0-9 ()]+\\)$" line))
           (error "unmatched title line"))
       (setq seqno (string-to-number (match-string 1 line))
             title (s-replace " " "-" (downcase (match-string 2 line))))
