@@ -5,6 +5,70 @@
 :SNIPPET:  leetcode
 :END:
 
+** DONE Swap Nodes in Pairs                          :recursion:linked_list:
+CLOSED: [2022-09-07 Wed 08:51] SCHEDULED: <2022-09-07 Wed>
+:PROPERTIES:
+:SEQNO:    24
+:LEVEL:    medium
+:ID:       B1F3611F-5F85-497A-8E75-5DF25EF5ABF6
+:ANKI_CARD: algT0WrrC
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-19 Mon 08:51]
+:END:
+** DONE Remove Nth Node From End of List          :two_pointers:linked_list:
+CLOSED: [2022-09-08 Thu 08:51] SCHEDULED: <2022-09-08 Thu>
+:PROPERTIES:
+:SEQNO:    19
+:LEVEL:    medium
+:ID:       FC5DD16A-E65A-4EDF-91CB-1DD720549012
+:ANKI_CARD: algdv1T0F
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-19 Mon 08:51]
+:END:
+** DONE Remove Duplicates from Sorted List                     :linked_list:
+CLOSED: [2022-09-08 Thu 08:51] SCHEDULED: <2022-09-08 Thu>
+:PROPERTIES:
+:SEQNO:    83
+:LEVEL:    easy
+:ID:       E78CFF14-0366-4D6F-B28D-24974AAB09F6
+:ANKI_CARD: algv6f1n1
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-19 Mon 08:51]
+:END:
+** DONE Remove Duplicates from Sorted List II     :two_pointers:linked_list:
+CLOSED: [2022-09-09 Fri 08:51] SCHEDULED: <2022-09-09 Fri>
+:PROPERTIES:
+:SEQNO:    82
+:LEVEL:    medium
+:ID:       07BF8CD6-E4C3-417B-B5B2-7CD6308C8424
+:ANKI_CARD: algFRtuzh
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-19 Mon 08:51]
+:END:
+** DONE Partition List                            :two_pointers:linked_list:
+CLOSED: [2022-09-13 Tue 08:51] SCHEDULED: <2022-09-13 Tue>
+:PROPERTIES:
+:SEQNO:    86
+:LEVEL:    medium
+:ID:       E6A07B46-9F80-4A54-8E15-3E26FC636AC2
+:ANKI_CARD: algzIWjuf
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-19 Mon 08:51]
+:END:
+** DONE Reverse Linked List II                                 :linked_list:
+CLOSED: [2022-09-19 Mon 08:51] SCHEDULED: <2022-09-19 Mon>
+:PROPERTIES:
+:SEQNO:    92
+:LEVEL:    medium
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-19 Mon 08:51]
+:END:
 ** DONE Binary Tree Inorder Traversal :binary_tree:depth_first_search:tree:stack:
 CLOSED: [2022-09-18 Sun 23:56] SCHEDULED: <2022-09-18 Sun>
 :PROPERTIES:
