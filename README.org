@@ -5,6 +5,17 @@
 :SNIPPET:  leetcode
 :END:
 
+** DONE Same Tree :binary_tree:breadth_first_search:depth_first_search:tree:
+CLOSED: [2022-09-19 Mon 22:22] SCHEDULED: <2022-09-19 Mon>
+:PROPERTIES:
+:SEQNO:    100
+:LEVEL:    easy
+:ID:       906F0580-B9FF-459D-8A67-F19DD3A15D91
+:ANKI_CARD: algPwswUh
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-19 Mon 22:22]
+:END:
 ** DONE Swap Nodes in Pairs                          :recursion:linked_list:
 CLOSED: [2022-09-07 Wed 08:51] SCHEDULED: <2022-09-07 Wed>
 :PROPERTIES:
