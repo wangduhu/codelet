@@ -5,6 +5,51 @@
 :SNIPPET:  leetcode
 :END:
 
+** DONE Climbing Stairs              :memoization:dynamic_programming:math:
+CLOSED: [2022-09-26 一 23:05] SCHEDULED: <2022-09-26 一>
+:PROPERTIES:
+:SEQNO:    70
+:LEVEL:    easy
+:ID:       4A3EE32B-39D3-4CC1-AF56-670636BB0FC8
+:ANKI_CARD: alg9AUPMu
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-26 一 23:05]
+:END:
+** DONE Plus One                                               :math:array:
+CLOSED: [2022-09-24 六 21:09] SCHEDULED: <2022-09-24 六>
+:PROPERTIES:
+:SEQNO:    66
+:LEVEL:    easy
+:ID:       32B1E142-C7B0-4376-96E5-64853F076CCA
+:ANKI_CARD: alghNmxJF
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-24 六 21:09]
+:END:
+** DONE Remove Duplicates from Sorted Array            :two_pointers:array:
+CLOSED: [2022-09-21 Wed 23:26] SCHEDULED: <2022-09-21 Wed>
+:PROPERTIES:
+:SEQNO:    26
+:LEVEL:    easy
+:ID:       41B9B033-15D7-4F80-A4C0-5500A15B023D
+:ANKI_CARD: algDWnBZz
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-21 Wed 23:26]
+:END:
+** DONE Sqrtx                                           :binary_search:math:
+CLOSED: [2022-09-20 Tue 23:28] SCHEDULED: <2022-09-20 Tue>
+:PROPERTIES:
+:SEQNO:    69
+:LEVEL:    easy
+:ID:       BF9FF6FD-3CDD-4F28-97E4-6DCD5664511F
+:ANKI_CARD: algjgEGtR
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2022-09-20 Tue 23:28]
+:END:
+
 ** DONE Same Tree :binary_tree:breadth_first_search:depth_first_search:tree:
 CLOSED: [2022-09-19 Mon 22:22] SCHEDULED: <2022-09-19 Mon>
 :PROPERTIES:
@@ -91,13 +136,6 @@ CLOSED: [2022-09-18 Sun 23:56] SCHEDULED: <2022-09-18 Sun>
 :END:
 
 动态分配释放内存，解法实在太糟糕了，需要优化
-
-** TODO Sqrt(x)                                         :binary_search:math:
-SCHEDULED: <2022-09-16 Fri>
-:PROPERTIES:
-:SEQNO:    69
-:LEVEL:    easy
-:END:
 
 ** DONE Linked List Cycle              :two_pointers:linked_list:hash_table:
 CLOSED: [2022-09-04 Sun 15:37] SCHEDULED: <2022-09-04 Sun>
